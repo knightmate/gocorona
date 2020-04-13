@@ -4,7 +4,7 @@
   <title>DonateForCovid</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -24,14 +24,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#">
+        <img src="./logo.png" style="max-width: 100%; max-height:100%;"> 
+        </img>
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -43,18 +45,43 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
+      <!-- <p><a href="#">Link</a></p>
       <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p> -->
+      <div class="image">
+        <img src="./sidenav.png" style="max-width: 100%; height: 100% ;object-fit: fill;">
+
+      </div>
     </div>
     <div class="col-sm-8 text-left"> 
-      <div class="cover">
-      <img src="cover.jpg" style="max-width: 100%;height: auto;" class="img-fluid" alt="Responsive image">
+   
+      
+      <i class="fas fa-allergies"></i>
+        
+       <div class="title">
+        <text>COVID-19</text>
       </div>
-
+     
+      
+      <div class="cover">
+      <img src="cover.jpg"  class="img-fluid" alt="Responsive image">
+      </div>
+      <p style="font-size: large;  font-weight: bold;">
+        As COVID-19 continues to spread, the future has never felt so 
+        unpredictable. 
+        These are challenging times for us all, and we hope you’re 
+        in good spirits and health! 
+        , our community needs us. And we need you.</p>
 
       <div class="donateButton">
-        <button type="button" class="btn btn-primary">Donate</button>
+        <div class="clickbtn"> 
+        <button type="button" class="btn btn-primary">  </button>
+      </div>
+
+         <div class="donateclick">
+        <button type="button" class="btn btn-primary" > Donate</button>
+       </div>
+
       </div>
       </div>
 
@@ -71,7 +98,7 @@
 </div>
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>Copyright@MIT</p>
 </footer>
 
  

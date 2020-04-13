@@ -23,8 +23,11 @@
   /* On small screens, set height to 'auto' for sidenav and grid */
   @media screen and (max-width: 767px) {
     .sidenav {
-      height: auto;
-      padding: 15px;
+      display: none;
+    }
+    .cover {
+       width: 100%;
+
     }
     .row.content {height:auto;} 
   }
@@ -38,11 +41,41 @@
        border: 1px solid red;
 
    }
+.cover img{
+   max-width: 100%;
+   height: auto;
+}
 
-   .donateButton button{
+ .clickbtn  button{
     
      width: 30% !important;
-     height: 70px !important;
-     background: url('/image/btn.png') no-repeat;
+     height: 100px !important;
+     background: url('./btn2.png') no-repeat;
+      color: rgb(250, 59, 11);
+      font-size: xx-large;
+      font-weight: bolder;
+     background-size: 100% 100%;
+    
+      
+   }
+    .donateclick button{
+     
+    color: black;
+    width: 30% !important;
+    
+    margin:10px;
+    background-color: red;
+   
+    border-radius:20px !important;
+     
 
    }
+
+    .title{
+
+        font-size: xx-large;
+        text-align: center;
+        font-weight: bolder;
+
+    }
+    
