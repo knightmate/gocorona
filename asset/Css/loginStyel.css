@@ -1,3 +1,4 @@
+ 
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -22,6 +23,12 @@
   
   /* On small screens, set height to 'auto' for sidenav and grid */
   @media screen and (max-width: 767px) {
+    .loginform{
+        width: 100% !important;
+
+       
+       
+   }
     .sidenav {
       display: none;
     }
@@ -32,50 +39,46 @@
     .row.content {height:auto;} 
   }
 
+    
 
-   .donateButton{
-    
-      text-align: center;
-        
-        
-       border: 1px solid red;
 
-   }
-.cover img{
-   max-width: 100%;
-   height: auto;
-}
-
- .clickbtn  button{
-    
-     width: 30% !important;
-     height: 100px !important;
-     background: url('./btn2.png') no-repeat;
-      color: rgb(250, 59, 11);
-      font-size: xx-large;
-      font-weight: bolder;
-     background-size: 100% 100%;
-    
-      
-   }
-    .donateclick button{
-     
-    color: black;
-    width: 30% !important;
-    
-    margin:10px;
-    background-color: red;
+  .bodyContainer{
    
-    border-radius:20px !important;
-     
-
-   }
-
-    .title{
-
-        font-size: xx-large;
-        text-align: center;
-        font-weight: bolder;
-
-    }
+    border: 1px red solid;
     
+
+
+  }
+
+
+  .bodyContainerlogin{
+       
+
+      background-image: url('./registercover.jpeg');
+     
+  }
+
+  
+
+
+  .Register{
+      
+       text-align: center;
+      color:white;
+      margin: auto;
+      width: 60%;
+      border: 3px solid #73AD21;
+      padding: 10px;
+
+
+
+
+  }
+
+  .form-group{
+
+    display: flex;
+    color: black;
+
+  }
+  

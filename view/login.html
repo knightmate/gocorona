@@ -24,7 +24,7 @@
               <span class="icon-bar"></span>                        
             </button>
             <a class="navbar-brand" href="#">
-              <img src="./logo.png" style="max-width: 100%; max-height:100%;"> 
+              <img src="/images//logo.png" style="max-width: 100%; max-height:100%;"> 
               </img>
             </a>
           </div>
@@ -41,58 +41,53 @@
         </div>
       </nav>
 
-      <div class="bodyContainer">
+      <div class="bodyContainerlogin"> 
     
+        <div class="loginform" style= "border: 1px solid red; background-color: white;
+        width: 40%; margin: auto;
+        ">
 
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Login In</h5>
+                    
+                    <form action="/login"  class="form-signin" method="POST" >
+                      <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <label for="inputEmail">Email address</label>
+                      </div>
         
-
-        <div class="Register">
-        <form action="/action_page.php" class="was-validated">
-            <div class="form-group">
-              <label for="uname">Name:</label>
-              <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
-               
+                      <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <label for="inputPassword">Password</label>
+                      </div>
+        
+                      <div class="custom-control custom-checkbox mb-3">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Remember password</label>
+                      </div>
+                      <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Login</button>
+     
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="pwd">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-               
-            </div>
-             
-              <div class="form-group">
-                <label for="pwd">Phone</label>
-                <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone" required>
-                 
-              </div>
-              <div class="form-group">
-                <label for="pwd">City:</label>
-                <input type="text" class="form-control" id="city" placeholder="Enter city" name="city" required>
-                 
-
-              </div>
-              <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-                 
-              </div>
-             
-            <button type="submit" class="btn btn-primary">Register</button>
-          </form>
-
           </div>
-
-
-           
-
-
+        
         </div>
-
-
+        
+      </div>
+     
 
         <footer class="container-fluid text-center">
             <p>Copyright@MIT</p>
           </footer>
-
+ 
 </body>
+ 
 
 </html>
