@@ -52,7 +52,7 @@ module.exports.login=function(req,res)
 
           if(user.password==req.body.password)
           {
-              res.redirect('/');
+              res.redirect('/donatepage');
           }else{
               res.send("password doesnt match");
           

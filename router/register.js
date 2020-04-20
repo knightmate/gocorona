@@ -13,11 +13,24 @@ router.get('/', function(req,res){
 router.use('/registerUser',controller.register);
 
 router.use('/login', controller.login);
+router.use('/donatepage',function(req,res){
+
+  res.sendfile('/Users/meghrajdeshmukh/Desktop/WebDevelopment/SanketPro/DonateToCovid/view/donatepage.html');
+
+
+})
 
 router.use('/userlogin', function(req,res){
 
   res.sendfile('/Users/meghrajdeshmukh/Desktop/WebDevelopment/SanketPro/DonateToCovid/view/login.html');
 
 });
+
+router.use('/donatestuff', function(req,res){
+
+    res.sendfile("/Users/meghrajdeshmukh/Desktop/WebDevelopment/SanketPro/DonateToCovid/view/donatestuff.html");
+
+});
+
 
 module.exports=router;
