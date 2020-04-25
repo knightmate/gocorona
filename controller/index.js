@@ -1,4 +1,5 @@
 const user=require('../model/user');
+var stuff=require('../model/stuff');
 
 module.exports.register=function(req, res)
 {
@@ -52,7 +53,9 @@ module.exports.login=function(req,res)
 
           if(user.password==req.body.password)
           {
+              res.cookie("user",user); 
               res.redirect('/donatepage');
+
           }else{
               res.send("password doesnt match");
           
@@ -61,6 +64,39 @@ module.exports.login=function(req,res)
 
     })
 
+
+
+
+}
+
+module.exports.addStuff=function(req,res){
+
+    console.log(req.body);
+     var user=req.cookies;
+     
+     console.log(user.user.user.user.user[0]);
+  var id=user.user.user.user.user[0];
+
+    stuff.create({
+
+        stuff:req.body.stuff,
+        location:req.body.pick,
+        phone:req.body.phone,
+        date:req.body.date,
+        User_id:id,
+
+ 
+        
+    }, function(err, user){
+
+        console.log(user);
+        if(err)
+        return res.send(err);
+
+        return res.send("thank you for giving stuff");
+
+
+    });
 
 
 
