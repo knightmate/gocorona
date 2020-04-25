@@ -2,7 +2,7 @@ const Express=require('express');
 var controller=require('../controller/index');
 var router=Express.Router();
 var path=require('path');
- 
+var Stuff=require('../model/stuff'); 
 
 router.get('/', function(req,res){
 
@@ -40,6 +40,43 @@ router.use('/paysucess', function(req, res){
   res.send("Thank you for payment");
 
 })
+
+
+router.use('/adminHome',function(req,res){
+ 
+  console.log(req.body.email);
+
+ if(req.body.email!=undefined) 
+  if(req.body.email!='admin@gmail.com')
+  {
+    return res.send("cannot find user");
+  }
+
+
+  Stuff.find({}, function(err, userObj){
+
+    res.render('admin.ejs', {
+
+      obj:userObj
+
+    });
+
+  })
+
+
+
+  
+});
+
+
+
+router.get('/Adminlogin', function(req,res){
+
+  console.log("we are  into AdminLogin");
+
+   res.sendFile('/Users/meghrajdeshmukh/Desktop/WebDevelopment/SanketPro/DonateToCovid/view/adminlogin.html');
+
+});
 
 
 

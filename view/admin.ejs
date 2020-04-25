@@ -45,57 +45,30 @@
   </div>
 </nav>
   
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <!-- <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p> -->
-       
-    </div>
-    <div class="col-sm-8 text-left"> 
-   
-      
-      <i class="fas fa-allergies"></i>
+
+ 
+    <div class="Container">
         
-       <div class="title">
-        <text>COVID-19</text>
-      </div>
-     
-      
-      <div class="cover">
-      <img src="/images//cover.jpg"  class="img-fluid" alt="Responsive image">
-      </div>
-      <p style="font-size: large;  font-weight: bold;">
-        As COVID-19 continues to spread, the future has never felt so 
-        unpredictable. 
-        These are challenging times for us all, and we hope you’re 
-        in good spirits and health! 
-        , our community needs us. And we need you.</p>
+         <table id="table">
+            <!-- here 'post' in 'post.comment' is the iterating  varible in the above for loop-->
+        
+            
+           <h1>List Of User Donated Item</h1>  
+            <% for( i of obj) { %>
+                <!-- using parials  here -->
+               
+                     <h2>Phone--<%=i.phone %><h1>
+                    <h2>List Of Item--<%=i.stuff %></h2>
+                    <h2>Date--<%=i.date %></h2>
+                    <br>
 
-      <div class="donateButton">
-        <div class="clickbtn"> 
-        <button type="button" class="btn btn-primary">  </button>
-      </div>
-
-         <div class="donateclick">
-          <a href="Css//register.html"><button  type="button" onclick="register.html"  class="btn btn-primary" > Donate</button></a>
-       </div>
-
-      </div>
-      </div>
+            <% } %>
+            
+        </table>
+    </div>
+ 
  
 
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <footer class="container-fluid text-center">
   <p>Copyright@MIT</p>

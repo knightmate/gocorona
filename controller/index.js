@@ -37,10 +37,19 @@ module.exports.register=function(req, res)
 
 }
 
+module.exports.adminHome=function(req,res)
+{
+    console.log(req.body);
+
+
+
+}
+
 module.exports.login=function(req,res)
 {
 
 
+   
 
     user.find(email=req.body.email, function(err, user){
 
